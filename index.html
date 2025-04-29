@@ -1,182 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zylo - The future of browsing. Join the whitelist and get exclusive early access to the ZyloCoin airdrop!">
-    <meta property="og:title" content="Zylo - Your Web. Your Power. Complete Every Task. Conquer Every Challenge.">
-    <meta property="og:description" content="Join the Zylo whitelist for early access and rewards!">
-    <meta property="og:image" content="https://zylobrowse.github.io/images/zylo-preview-image.png">
+    <meta name="description" content="Zylo Browser: Your Web. Your Power. Complete Every Task. Conquer Every Challenge.">
+    <meta property="og:title" content="Zylo - The Future of Browsing">
+    <meta property="og:description" content="Your Web. Your Power. Complete Every Task. Conquer Every Challenge.">
+    <meta property="og:image" content="https://zylobrowse.github.io/images/Blue-and-Black-Modern-Gradient-Software-Development-Technology-Logo.png">
     <meta property="og:url" content="https://zylobrowse.github.io/Zylo-Browse/">
-    <title>Zylo - Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</title>
-    <link rel="icon" href="https://zylobrowse.github.io/images/zylo-favicon.png" type="image/png">
-    
-    <style>
-        /* Basic Reset */
-        body, h1, h2, h3, ul, li {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+    <title>Zylo - The Future of Browsing</title>
+    <link rel="icon" href="https://zylobrowse.github.io/images/favicon.ico">
 
+    <style>
         body {
+            font-family: 'Arial', sans-serif;
             background-color: #121212;
             color: #fff;
-            line-height: 1.6;
-            padding: 0 20px;
+            margin: 0;
+            padding: 0;
         }
 
-       <!-- Hero Section -->
-    <section class="hero">
-    <!-- Replace the text "Zylo" with your logo -->
-    <img src="https://zylobrowse.github.io/images/Blue-and-Black-Modern-Gradient-Software-Development-Technology-Logo.png" alt="Zylo Logo" style="width: 200px; height: auto;">
-    <p>Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
-    <a href="whitelist.html" class="cta-btn">Join the Whitelist</a>
-    </section>
-
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 50px 0;
+            padding: 50px 20px;
         }
 
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #00d1b2;
-            text-shadow: 0 0 15px rgba(0, 209, 178, 0.7);
-            border: 3px solid #00d1b2;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 209, 178, 0.5);
+        .hero img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.9);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
         }
 
         .hero p {
             font-size: 1.5rem;
-            color: #e0e0e0;
+            color: #fff;
             margin-bottom: 30px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
         }
 
+        /* Call to Action Button */
         .cta-btn {
-            background-color: #00d1b2;
-            color: #fff;
+            display: inline-block;
             padding: 15px 30px;
+            background-color: #00aaff;
+            color: #fff;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .cta-btn:hover {
-            background-color: #009c83;
+            background-color: #0088cc;
+            transform: scale(1.05);
         }
 
         /* Social Media Icons */
-        .social-icons {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            color: #00d1b2;
-            font-size: 2rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #ffffff;
-        }
-
-        /* List of Upcoming Features */
-        .feature-list {
-            background-color: #0f0f0f;
-            color: #fff;
-            padding: 50px 10px;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-
-        .feature-list h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #f9f9f9;
-        }
-
-        .feature-list ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .feature-list li {
-            font-size: 1.25rem;
-            color: #ccc;
-            margin: 10px 0;
-        }
-
-        /* Whitelist Page */
-        .whitelist-btn {
-            background-color: #00d1b2;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            display: inline-block;
+        .socials {
             margin-top: 30px;
         }
 
-        .whitelist-btn:hover {
-            background-color: #009c83;
+        .socials img {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+        .socials img:hover {
+            opacity: 0.7;
+        }
 
-            .feature-list h2 {
-                font-size: 2rem;
-            }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+        }
 
-            .feature-list li {
-                font-size: 1rem;
-            }
+        footer p {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .socials-footer {
+            margin-top: 15px;
         }
     </style>
 </head>
-
 <body>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>ZYLO</h1>
+        <!-- Logo -->
+        <img src="https://zylobrowse.github.io/images/Blue-and-Black-Modern-Gradient-Software-Development-Technology-Logo.png" alt="Zylo Logo">
+        <!-- Slogan -->
         <p>Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
+        <!-- Call to Action Button -->
         <a href="whitelist.html" class="cta-btn">Join the Whitelist</a>
     </section>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons">
-        <a href="https://twitter.com/Zylo" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/Zylo" target="_blank">Instagram</a>
-        <a href="https://discord.gg/Zylo" target="_blank">Discord</a>
-    </div>
+    <!-- Social Media Links -->
+    <section class="socials">
+        <a href="https://twitter.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+        <a href="https://discord.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord"></a>
+    </section>
 
-    <!-- Features Coming Soon Section -->
-    <div class="feature-list">
-        <h2>What’s Coming Next</h2>
-        <ul>
-            <li>Whitelist Open: Early access for the first 1,000 users</li>
-            <li>ZyloCoin Launch (June): Token deployment and airdrop announcement</li>
-            <li>Browser MVP (Summer): First public version of Zylo Browser with AI-powered tools</li>
-            <li>Forum + Custom Dashboards (Late Summer): Personalized homepage and community interaction</li>
-            <li>Blockchain Integration (Fall): Wallet linking and NFT tracker</li>
-            <li>Premium Features (Late 2025): Subscription models and creator monetization tools</li>
+    <!-- Timeline / Future Plans -->
+    <section class="timeline">
+        <h2 style="text-align: center; color: #00aaff;">What’s Coming Next</h2>
+        <ul style="list-style-type: none; padding-left: 0; text-align: center; color: #fff;">
+            <li>🚀 **Zylo Coin Intro** - June: ERC-20 token launch, airdrop announcement</li>
+            <li>🌐 **Zylo Browser MVP** - Summer: Basic beta release, AI integration, bookmarking, news feed</li>
+            <li>🔑 **User Dashboard & Forum** - Late Summer: Customizable homepage, forum, live chat</li>
+            <li>💎 **Zylo Coin Integration** - Fall: Wallet linking, blockchain stats, NFT/gas trackers</li>
+            <li>💰 **Premium Features** - Late 2025: Premium plans, creator monetization tools</li>
         </ul>
-    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Zylo Browser. All rights reserved.</p>
+        <div class="socials-footer">
+            <a href="https://twitter.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="https://discord.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord"></a>
+        </div>
+    </footer>
 
 </body>
-
 </html>

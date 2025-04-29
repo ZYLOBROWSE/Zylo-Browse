@@ -2,162 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
   <title>Zylo — Your Web. Your Power.</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap');
+  <meta name="title" content="Zylo — Your Web. Your Power.">
+  <meta name="description" content="Zylo is the futuristic AI-powered browser that empowers you to complete every task, conquer every challenge, and explore the future of the web.">
 
-    * {
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zylobrowse.github.io/Zylo-Browse/">
+  <meta property="og:title" content="Zylo — Your Web. Your Power.">
+  <meta property="og:description" content="The futuristic browser that brings AI, crypto, NFTs, and the power to create to your fingertips.">
+  <meta property="og:image" content="https://yourdomain.com/zylo-preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zylobrowse.github.io/Zylo-Browse/">
+  <meta property="twitter:title" content="Zylo — Your Web. Your Power.">
+  <meta property="twitter:description" content="The futuristic browser that brings AI, crypto, NFTs, and the power to create to your fingertips.">
+  <meta property="twitter:image" content="https://yourdomain.com/zylo-preview.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #0c0c0c;
-      color: #fff;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 50px 20px;
-    }
-
-    .logo {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 6rem;
-      font-weight: 700;
-      color: #fff;
-      background: #ffffff10;
-      padding: 30px 60px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
-      animation: pulse 3s infinite;
-      margin-bottom: 30px;
-    }
-
-    @keyframes pulse {
-      0% { text-shadow: 0 0 10px #00fff7; }
-      50% { text-shadow: 0 0 25px #00fff7, 0 0 35px #00b3ff; }
-      100% { text-shadow: 0 0 10px #00fff7; }
-    }
-
-    .tagline {
-      font-size: 1.5rem;
-      font-weight: 500;
-      font-style: italic;
       text-align: center;
-      margin-bottom: 40px;
-      max-width: 800px;
-      color: #ccc;
     }
 
-    .coming {
-      font-size: 1rem;
-      margin-bottom: 40px;
-      color: #aaa;
+    .container {
+      padding: 80px 20px;
     }
 
-    .form-box {
-      background: #1a1a1a;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 0 18px #00b3ff55;
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .form-box h2 {
-      font-size: 1.5rem;
-      margin-bottom: 8px;
-    }
-
-    .form-box p {
-      color: #bbb;
-      margin-bottom: 20px;
-      font-size: 1rem;
-    }
-
-    input[type="email"] {
-      padding: 12px;
-      width: 80%;
-      border: none;
-      border-radius: 6px;
-      background: #333;
-      color: #fff;
-      font-size: 1rem;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 12px 28px;
-      background: #00b3ff;
-      border: none;
-      border-radius: 6px;
-      color: #000;
+    h1 {
+      font-size: 5rem;
+      margin: 0;
       font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
+      letter-spacing: 2px;
     }
 
-    button:hover {
-      background: #00e0ff;
+    p.tagline {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 600px;
     }
 
-    .social-links {
+    .whitelist {
+      margin-top: 40px;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .socials {
+      margin-top: 40px;
       display: flex;
-      justify-content: center;
       gap: 20px;
-      margin-top: 25px;
+      justify-content: center;
     }
 
-    .social-links a {
-      color: #00b3ff;
+    .socials a {
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.2rem;
-      transition: color 0.2s;
     }
 
-    .social-links a:hover {
-      color: #00e0ff;
-    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
 
-    footer {
-      margin-top: 50px;
-      color: #666;
-      font-size: 0.8rem;
+      p.tagline {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Zylo</h1>
+    <p class="tagline">Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
 
-  <div class="logo">Zylo</div>
-  <div class="tagline">Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</div>
-  <div class="coming">🚀 The future of browsing is coming soon.</div>
+    <div class="whitelist">
+      <h2>Whitelist Now Open</h2>
+      <p>Join the early access whitelist for Zylo. Be the first to shape the future of browsing.</p>
+      <!-- Embed form or button here later -->
+    </div>
 
-  <div class="form-box">
-    <h2>Whitelist Signup</h2>
-    <p>Be one of the first to explore Zylo. Get notified early.</p>
-    <form action="#" method="POST">
-      <input type="email" placeholder="Your email" required />
-      <br />
-      <button type="submit">Join Whitelist</button>
-    </form>
+    <div class="socials">
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Discord</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
   </div>
-
-  <div class="social-links">
-    <a href="#" target="_blank">Twitter</a>
-    <a href="#" target="_blank">Discord</a>
-    <a href="#" target="_blank">Instagram</a>
-  </div>
-
-  <footer>
-    &copy; 2025 Zylo. All rights reserved.
-  </footer>
-
 </body>
 </html>

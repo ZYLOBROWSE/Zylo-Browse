@@ -23,13 +23,13 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px; /* Increased padding for a larger block */
         }
 
         .hero img {
-            width: 300px;
+            width: 350px; /* Slightly larger image */
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px; /* Increased space between logo and text */
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.9);
@@ -41,21 +41,21 @@
         }
 
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.75rem; /* Increased font size */
             color: #fff;
-            margin-bottom: 30px;
+            margin-bottom: 40px; /* Increased space below the slogan */
             text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
         }
 
         /* Call to Action Button */
         .cta-btn {
             display: inline-block;
-            padding: 30px 60px; /* Increased padding for a bigger button */
+            padding: 30px 60px; /* Increased padding for a larger button */
             background-color: #00aaff;
             color: #fff;
             text-decoration: none;
             border-radius: 10px;
-            margin-top: 30px; /* Increased space above the button */
+            margin-top: 40px; /* Increased space above the button */
             font-size: 1.25rem; /* Increased font size */
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 0 15px rgba(0, 170, 255, 0.7); /* Added glowing effect */
@@ -67,40 +67,23 @@
         }
 
         /* Social Media Icons */
-        .socials {
-            margin-top: 30px;
+        .socials-footer {
+            text-align: center;
+            margin-top: 30px; /* Increased space from footer text */
         }
 
-        .socials img {
-            width: 40px;
-            margin: 0 10px;
+        .socials-footer img {
+            width: 50px; /* Slightly larger icons */
+            margin: 0 15px;
             cursor: pointer;
             transition: opacity 0.3s ease;
         }
 
-        .socials img:hover {
+        .socials-footer img:hover {
             opacity: 0.7;
         }
 
-        /* Timeline / Future Plans Section */
-        .timeline h2 {
-            color: #00aaff;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .timeline ul {
-            list-style-type: none;
-            padding-left: 0;
-            text-align: center;
-        }
-
-        .timeline li {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-
-        /* Footer */
+        /* Footer Section */
         footer {
             text-align: center;
             padding: 20px;
@@ -110,10 +93,6 @@
         footer p {
             color: #fff;
             margin-top: 10px;
-        }
-
-        .socials-footer {
-            margin-top: 15px;
         }
     </style>
 </head>
@@ -129,17 +108,10 @@
         <a href="whitelist.html" class="cta-btn">Join the Whitelist</a>
     </section>
 
-    <!-- Social Media Links -->
-    <section class="socials">
-        <a href="https://twitter.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
-        <a href="https://instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
-        <a href="https://discord.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord"></a>
-    </section>
-
     <!-- Timeline / Future Plans -->
     <section class="timeline">
-        <h2>What’s Coming Next</h2>
-        <ul>
+        <h2 style="text-align: center; color: #00aaff;">What’s Coming Next</h2>
+        <ul style="list-style-type: none; padding-left: 0; text-align: center; color: #fff;">
             <li>🚀 **Zylo Coin Intro** - June: ERC-20 token launch, airdrop announcement</li>
             <li>🌐 **Zylo Browser MVP** - Summer: Basic beta release, AI integration, bookmarking, news feed</li>
             <li>🔑 **User Dashboard & Forum** - Late Summer: Customizable homepage, forum, live chat</li>
@@ -151,6 +123,7 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Zylo Browser. All rights reserved.</p>
+        <!-- Social Media Links at the bottom -->
         <div class="socials-footer">
             <a href="https://twitter.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
             <a href="https://instagram.com/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
@@ -160,3 +133,4 @@
 
 </body>
 </html>
+

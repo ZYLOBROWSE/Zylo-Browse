@@ -1,116 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zylo — Your Web. Your Power.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zylo - The future of browsing. Join the whitelist and get exclusive early access to the ZyloCoin airdrop!">
+    <meta property="og:title" content="Zylo - Your Web. Your Power. Complete Every Task. Conquer Every Challenge.">
+    <meta property="og:description" content="Join the Zylo whitelist for early access and rewards!">
+    <meta property="og:image" content="https://zylobrowse.github.io/images/zylo-preview-image.png">
+    <meta property="og:url" content="https://zylobrowse.github.io/Zylo-Browse/">
+    <title>Zylo - Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</title>
+    <link rel="icon" href="https://zylobrowse.github.io/images/zylo-favicon.png" type="image/png">
+    
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, ul, li {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
-  <!-- Meta and OG Tags Omitted for Brevity (Same as Before) -->
+        body {
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+        /* Header Section */
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #00d1b2;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0d0d0d;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+        .hero p {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
 
-    .container {
-      padding: 100px 20px;
-      max-width: 900px;
-      width: 100%;
-    }
+        .cta-btn {
+            background-color: #00d1b2;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
 
-    h1 {
-      font-size: 7rem;
-      margin: 0;
-      font-weight: 700;
-      color: #ffffff;
-      text-shadow: 0 0 20px #00ffee;
-    }
+        .cta-btn:hover {
+            background-color: #009c83;
+        }
 
-    p.tagline {
-      font-size: 1.5rem;
-      margin-top: 20px;
-      color: #e0e0e0;
-    }
+        /* Timeline Section */
+        .timeline-container {
+            background-color: #0f0f0f;
+            color: #fff;
+            padding: 50px 10px;
+            text-align: center;
+        }
 
-    .cta {
-      margin-top: 50px;
-    }
+        .timeline-heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #f9f9f9;
+        }
 
-    .cta a {
-      background: #00ffee;
-      color: #000;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background 0.3s;
-    }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .cta a:hover {
-      background: #00ccbb;
-    }
+        .timeline-item {
+            background-color: #1a1a1a;
+            width: 80%;
+            margin: 20px 0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-    .socials {
-      margin-top: 60px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+        .timeline-year {
+            font-size: 1.5rem;
+            color: #00d1b2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-    .socials a {
-      background: white;
-      color: black;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
+        .timeline-content h3 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
 
-    .socials a:hover {
-      background: #ccc;
-    }
+        .timeline-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 4rem;
-      }
+        .timeline-content ul li {
+            font-size: 1rem;
+            color: #ccc;
+            margin: 5px 0;
+        }
 
-      p.tagline {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+        @media (max-width: 768px) {
+            .timeline-container {
+                padding: 30px 10px;
+            }
+
+            .timeline-heading {
+                font-size: 2rem;
+            }
+
+            .timeline-item {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Zylo</h1>
-    <p class="tagline">Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
 
-    <div class="cta">
-      <a href="whitelist.html">Join the Whitelist</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Zylo</h1>
+        <p>Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
+        <a href="#whitelist" class="cta-btn">Join the Whitelist</a>
+    </section>
+
+    <!-- Timeline Section -->
+    <div class="timeline-container">
+        <h2 class="timeline-heading">The Road to the Future of Browsing</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">Q2 2025</div>
+                <div class="timeline-content">
+                    <h3>Whitelist Phase</h3>
+                    <ul>
+                        <li>Launch landing page & whitelist</li>
+                        <li>Build early supporter email list</li>
+                        <li>Begin community growth on socials</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">June 2025</div>
+                <div class="timeline-content">
+                    <h3>ZyloCoin Intro</h3>
+                    <ul>
+                        <li>Launch ERC-20 ZyloCoin (ZC)</li>
+                        <li>Release litepaper explaining the tokenomics</li>
+                        <li>Airdrop & community incentives announced</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">Summer 2025</div>
+                <div class="timeline-content">
+                    <h3>Zylo MVP Beta</h3>
+                    <ul>
+                        <li>Release early version of the browser</li>
+                        <li>Core features: AI assistant, Search, Bookmark bar, Crypto Watchlist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">Late Summer 2025</div>
+                <div class="timeline-content">
+                    <h3>Forums + Chat + Dashboard</h3>
+                    <ul>
+                        <li>Custom user dashboards & themes</li>
+                        <li>Forum + community chat rooms</li>
+                        <li>Launch affiliate links & to-do list feature</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">Fall 2025</div>
+                <div class="timeline-content">
+                    <h3>Web3 Tools + Tracker</h3>
+                    <ul>
+                        <li>Wallet integration (ETH, MetaMask)</li>
+                        <li>NFT + Gas Fee tracker widget live</li>
+                        <li>Blockchain security alerts via AI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">Late 2025</div>
+                <div class="timeline-content">
+                    <h3>Premium + Monetization</h3>
+                    <ul>
+                        <li>Premium memberships (early access benefits)</li>
+                        <li>Creator & affiliate monetization tools</li>
+                        <li>Launch partner program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="socials">
-      <a href="#">Twitter</a>
-      <a href="#">Discord</a>
-      <a href="#">GitHub</a>
-    </div>
-  </div>
+    <!-- Whitelist Section -->
+    <section id="whitelist">
+        <h2>Join Our Whitelist</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Ab3WLHy2QzFBrMNg7YdGarAixfIIDRQyGjWurDXmef_0cA/viewform?embedded=true" width="640" height="705" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary Meta Tags -->
   <title>Zylo — Your Web. Your Power.</title>
   <meta name="title" content="Zylo — Your Web. Your Power.">
@@ -41,10 +41,12 @@
 
     .container {
       padding: 80px 20px;
+      max-width: 900px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 6rem;
       margin: 0;
       font-weight: bold;
       letter-spacing: 2px;
@@ -54,15 +56,23 @@
       font-size: 1.5rem;
       margin-top: 20px;
       max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .whitelist {
-      margin-top: 40px;
+      margin-top: 50px;
       background: #1a1a1a;
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
-      width: 90%;
-      max-width: 600px;
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      height: 705px;
     }
 
     .socials {
@@ -70,6 +80,7 @@
       display: flex;
       gap: 20px;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .socials a {
@@ -79,15 +90,24 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .socials a:hover {
+      background: #ccc;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
 
       p.tagline {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+      }
+
+      iframe {
+        height: 750px;
       }
     }
   </style>
@@ -99,14 +119,14 @@
 
     <div class="whitelist">
       <h2>Whitelist Now Open</h2>
-      <p>Join the early access whitelist for Zylo. Be the first to shape the future of browsing.</p>
-      <!-- Embed form or button here later -->
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Ab3WLHy2QzFBrMNg7YdGarAixfIIDRQyGjWurDXmef_0cA/viewform?embedded=true" width="640" height="705" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p>Join early access and help shape the future of browsing.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Ab3WLHy2QzFBrMNg7YdGarAixfIIDRQyGjWurDXmef_0cA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
 
     <div class="socials">
-      <a href="#" target="_blank">Twitter</a>
-      <a href="#" target="_blank">Discord</a>
-      <a href="#" target="_blank">GitHub</a>
+      <a href="#">Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#">GitHub</a>
     </div>
   </div>
 </body>

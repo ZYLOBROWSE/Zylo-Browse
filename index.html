@@ -50,34 +50,38 @@
         /* Call to Action Button */
         .cta-btn {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 30px 60px; /* Increased padding for a bigger button */
             background-color: #00aaff;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 10px;
+            margin-top: 30px; /* Increased space above the button */
+            font-size: 1.25rem; /* Increased font size */
             transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 0 15px rgba(0, 170, 255, 0.7); /* Added glowing effect */
         }
 
         .cta-btn:hover {
             background-color: #0088cc;
-            transform: scale(1.05);
+            transform: scale(1.1); /* Slight increase in size on hover */
         }
 
-        /* Social Media Icons */
-        .socials {
-            margin-top: 30px;
+        /* Timeline / Future Plans Section */
+        .timeline h2 {
+            color: #00aaff;
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
 
-        .socials img {
-            width: 40px;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
+        .timeline ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: center;
         }
 
-        .socials img:hover {
-            opacity: 0.7;
+        .timeline li {
+            margin: 10px 0;
+            font-size: 1.2rem;
         }
 
         /* Footer */
@@ -118,8 +122,8 @@
 
     <!-- Timeline / Future Plans -->
     <section class="timeline">
-        <h2 style="text-align: center; color: #00aaff;">What’s Coming Next</h2>
-        <ul style="list-style-type: none; padding-left: 0; text-align: center; color: #fff;">
+        <h2>What’s Coming Next</h2>
+        <ul>
             <li>🚀 **Zylo Coin Intro** - June: ERC-20 token launch, airdrop announcement</li>
             <li>🌐 **Zylo Browser MVP** - Summer: Basic beta release, AI integration, bookmarking, news feed</li>
             <li>🔑 **User Dashboard & Forum** - Late Summer: Customizable homepage, forum, live chat</li>

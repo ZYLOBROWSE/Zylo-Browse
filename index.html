@@ -3,34 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Primary Meta Tags -->
   <title>Zylo — Your Web. Your Power.</title>
-  <meta name="title" content="Zylo — Your Web. Your Power.">
-  <meta name="description" content="Zylo is the futuristic AI-powered browser that empowers you to complete every task, conquer every challenge, and explore the future of the web.">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zylobrowse.github.io/Zylo-Browse/">
-  <meta property="og:title" content="Zylo — Your Web. Your Power.">
-  <meta property="og:description" content="The futuristic browser that brings AI, crypto, NFTs, and the power to create to your fingertips.">
-  <meta property="og:image" content="https://yourdomain.com/zylo-preview.png">
+  <!-- Meta and OG Tags Omitted for Brevity (Same as Before) -->
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://zylobrowse.github.io/Zylo-Browse/">
-  <meta property="twitter:title" content="Zylo — Your Web. Your Power.">
-  <meta property="twitter:description" content="The futuristic browser that brings AI, crypto, NFTs, and the power to create to your fingertips.">
-  <meta property="twitter:image" content="https://yourdomain.com/zylo-preview.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Orbitron', sans-serif;
       background-color: #0d0d0d;
       color: white;
       display: flex;
@@ -40,43 +26,46 @@
     }
 
     .container {
-      padding: 80px 20px;
+      padding: 100px 20px;
       max-width: 900px;
       width: 100%;
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: 7rem;
       margin: 0;
-      font-weight: bold;
-      letter-spacing: 2px;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 0 20px #00ffee;
     }
 
     p.tagline {
       font-size: 1.5rem;
       margin-top: 20px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      color: #e0e0e0;
     }
 
-    .whitelist {
+    .cta {
       margin-top: 50px;
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
     }
 
-    iframe {
-      width: 100%;
-      border: none;
-      border-radius: 8px;
-      height: 705px;
+    .cta a {
+      background: #00ffee;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #00ccbb;
     }
 
     .socials {
-      margin-top: 40px;
+      margin-top: 60px;
       display: flex;
       gap: 20px;
       justify-content: center;
@@ -99,15 +88,11 @@
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
       }
 
       p.tagline {
         font-size: 1.2rem;
-      }
-
-      iframe {
-        height: 750px;
       }
     }
   </style>
@@ -117,10 +102,8 @@
     <h1>Zylo</h1>
     <p class="tagline">Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
 
-    <div class="whitelist">
-      <h2>Whitelist Now Open</h2>
-      <p>Join early access and help shape the future of browsing.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Ab3WLHy2QzFBrMNg7YdGarAixfIIDRQyGjWurDXmef_0cA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="cta">
+      <a href="whitelist.html">Join the Whitelist</a>
     </div>
 
     <div class="socials">

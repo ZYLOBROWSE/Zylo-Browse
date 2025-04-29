@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zylo — Power Your Future</title>
+  <title>Zylo — Your Web. Your Power.</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap');
 
     * {
       margin: 0;
@@ -20,31 +20,35 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     .logo {
       font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
+      font-size: 4.5rem;
+      font-weight: 700;
       color: #fff;
       background: #ffffff10;
-      padding: 10px 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      padding: 20px 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
       animation: pulse 3s infinite;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     @keyframes pulse {
       0% { text-shadow: 0 0 10px #00fff7; }
-      50% { text-shadow: 0 0 20px #00fff7, 0 0 30px #00b3ff; }
+      50% { text-shadow: 0 0 25px #00fff7, 0 0 35px #00b3ff; }
       100% { text-shadow: 0 0 10px #00fff7; }
     }
 
     .tagline {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
       font-style: italic;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 35px;
+      max-width: 800px;
       color: #ccc;
     }
 
@@ -58,25 +62,32 @@
       background: #1a1a1a;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 10px #00b3ff33;
-      max-width: 400px;
+      box-shadow: 0 0 15px #00b3ff55;
+      max-width: 420px;
       width: 100%;
       text-align: center;
     }
 
     .form-box h2 {
-      margin-bottom: 10px;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+
+    .form-box p {
+      color: #bbb;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
     }
 
     input[type="email"] {
       padding: 10px;
       width: 80%;
-      margin-top: 15px;
+      margin-top: 10px;
       border: none;
       border-radius: 6px;
       background: #333;
       color: #fff;
+      font-size: 1rem;
     }
 
     button {
@@ -87,6 +98,7 @@
       border-radius: 6px;
       color: #000;
       font-weight: bold;
+      font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s ease;
     }
@@ -109,12 +121,12 @@
   <div class="coming">🚀 The future of browsing is coming soon.</div>
 
   <div class="form-box">
-    <h2>Join the Whitelist</h2>
-    <p>Get early access to our launch</p>
+    <h2>Whitelist Signup</h2>
+    <p>Be one of the first to explore Zylo. Get notified early.</p>
     <form action="#" method="POST">
       <input type="email" placeholder="Your email" required />
       <br />
-      <button type="submit">Sign Up</button>
+      <button type="submit">Join Whitelist</button>
     </form>
   </div>
 
@@ -124,4 +136,3 @@
 
 </body>
 </html>
-

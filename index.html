@@ -27,17 +27,21 @@
             padding: 0 20px;
         }
 
-        /* Header Section */
+        /* Hero Section */
         .hero {
             text-align: center;
             padding: 50px 0;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: bold;
             color: #00d1b2;
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 0 15px rgba(0, 209, 178, 0.7);
+            border: 3px solid #00d1b2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 209, 178, 0.5);
         }
 
         .hero p {
@@ -60,70 +64,78 @@
             background-color: #009c83;
         }
 
-        /* Timeline Section */
-        .timeline-container {
+        /* Social Media Icons */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #00d1b2;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
+        }
+
+        /* List of Upcoming Features */
+        .feature-list {
             background-color: #0f0f0f;
             color: #fff;
             padding: 50px 10px;
             text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
         }
 
-        .timeline-heading {
+        .feature-list h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
             color: #f9f9f9;
         }
 
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .timeline-item {
-            background-color: #1a1a1a;
-            width: 80%;
-            margin: 20px 0;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .timeline-year {
-            font-size: 1.5rem;
-            color: #00d1b2;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .timeline-content h3 {
-            font-size: 1.75rem;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-
-        .timeline-content ul {
+        .feature-list ul {
             list-style-type: none;
             padding-left: 0;
         }
 
-        .timeline-content ul li {
-            font-size: 1rem;
+        .feature-list li {
+            font-size: 1.25rem;
             color: #ccc;
-            margin: 5px 0;
+            margin: 10px 0;
+        }
+
+        /* Whitelist Page */
+        .whitelist-btn {
+            background-color: #00d1b2;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .whitelist-btn:hover {
+            background-color: #009c83;
         }
 
         @media (max-width: 768px) {
-            .timeline-container {
-                padding: 30px 10px;
+            .hero h1 {
+                font-size: 2.5rem;
             }
 
-            .timeline-heading {
+            .feature-list h2 {
                 font-size: 2rem;
             }
 
-            .timeline-item {
-                width: 90%;
+            .feature-list li {
+                font-size: 1rem;
             }
         }
     </style>
@@ -135,92 +147,30 @@
     <section class="hero">
         <h1>Zylo</h1>
         <p>Your Web. Your Power. Complete Every Task. Conquer Every Challenge.</p>
-        <a href="#whitelist" class="cta-btn">Join the Whitelist</a>
+        <a href="whitelist.html" class="cta-btn">Join the Whitelist</a>
     </section>
 
-    <!-- Timeline Section -->
-    <div class="timeline-container">
-        <h2 class="timeline-heading">The Road to the Future of Browsing</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-year">Q2 2025</div>
-                <div class="timeline-content">
-                    <h3>Whitelist Phase</h3>
-                    <ul>
-                        <li>Launch landing page & whitelist</li>
-                        <li>Build early supporter email list</li>
-                        <li>Begin community growth on socials</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">June 2025</div>
-                <div class="timeline-content">
-                    <h3>ZyloCoin Intro</h3>
-                    <ul>
-                        <li>Launch ERC-20 ZyloCoin (ZC)</li>
-                        <li>Release litepaper explaining the tokenomics</li>
-                        <li>Airdrop & community incentives announced</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">Summer 2025</div>
-                <div class="timeline-content">
-                    <h3>Zylo MVP Beta</h3>
-                    <ul>
-                        <li>Release early version of the browser</li>
-                        <li>Core features: AI assistant, Search, Bookmark bar, Crypto Watchlist</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">Late Summer 2025</div>
-                <div class="timeline-content">
-                    <h3>Forums + Chat + Dashboard</h3>
-                    <ul>
-                        <li>Custom user dashboards & themes</li>
-                        <li>Forum + community chat rooms</li>
-                        <li>Launch affiliate links & to-do list feature</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">Fall 2025</div>
-                <div class="timeline-content">
-                    <h3>Web3 Tools + Tracker</h3>
-                    <ul>
-                        <li>Wallet integration (ETH, MetaMask)</li>
-                        <li>NFT + Gas Fee tracker widget live</li>
-                        <li>Blockchain security alerts via AI</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">Late 2025</div>
-                <div class="timeline-content">
-                    <h3>Premium + Monetization</h3>
-                    <ul>
-                        <li>Premium memberships (early access benefits)</li>
-                        <li>Creator & affiliate monetization tools</li>
-                        <li>Launch partner program</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://twitter.com/Zylo" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/Zylo" target="_blank">Instagram</a>
+        <a href="https://discord.gg/Zylo" target="_blank">Discord</a>
     </div>
 
-    <!-- Whitelist Section -->
-    <section id="whitelist">
-        <h2>Join Our Whitelist</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Ab3WLHy2QzFBrMNg7YdGarAixfIIDRQyGjWurDXmef_0cA/viewform?embedded=true" width="640" height="705" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </section>
+    <!-- Features Coming Soon Section -->
+    <div class="feature-list">
+        <h2>What’s Coming Next</h2>
+        <ul>
+            <li>Whitelist Open: Early access for the first 1,000 users</li>
+            <li>ZyloCoin Launch (June): Token deployment and airdrop announcement</li>
+            <li>Browser MVP (Summer): First public version of Zylo Browser with AI-powered tools</li>
+            <li>Forum + Custom Dashboards (Late Summer): Personalized homepage and community interaction</li>
+            <li>Blockchain Integration (Fall): Wallet linking and NFT tracker</li>
+            <li>Premium Features (Late 2025): Subscription models and creator monetization tools</li>
+        </ul>
+    </div>
 
 </body>
 
 </html>
+
